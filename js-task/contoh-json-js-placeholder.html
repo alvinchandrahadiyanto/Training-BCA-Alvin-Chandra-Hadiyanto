@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JSON Placeholder Demo with Fetch API</title>
+    </head>
+    <body>
+        <button onclick="request()">Request Data</button>
+    </body>
+    <script>
+        function request(){
+            fetch("https://jsonplaceholder.typicode.com/todos/1")
+            .then(function(response){
+                return response.json()
+            })
+            .then((response) => {
+                var result = document.getElementById('result')
+                var item = ''
+                console.log(response)
+                response.array.forEach(element => {
+                    item = 'User Id:' + element.userId + "Id:"+ element.id + "title:" + element.title + "completed:" + element.completed + "<br><br>" 
+
+                    console.log(item)
+
+                    result.append(item)
+                });
+            })
+        }
+    </script>
+</html>

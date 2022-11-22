@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas JavaScript No 10</title>
+</head>
+<body>
+  <button onclick="request()">Request Data</button>
+</body>
+  <script>
+    function request(){
+        fetch("n10.json")
+        .then(function(response){
+            return response.json()
+        })
+        .then((response) => {
+            var result = document.getElementById('result')
+            var item = ''
+            console.log(response)
+            response.array.forEach(element => {
+                item = 'Name:' + element.name + "Email:"+ element.email + "Address Street:" + element.address_street + "Company Name:" + element.company_name + "Phone:" + element.phone + "<br><br>" 
+                console.log(item)
+                result.append(item)
+            });
+        })
+    }
+  </script>
+</html>

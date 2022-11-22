@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tugas JavaScript</title>
+</head>
+ 
+<body>
+<h3>Tugas nomor 10</h3>
+  <p>Name: <span id="name">Alvin Chandra Hadiyanto</span>
+  <br/>Email: <span id="email">chandrahadiyantoalvin@gmail.com</span>
+  <br/>Address sreet: <span id="address_s">Purwodadi</span>
+  <br/>Company name: <span id="company_n">BCA</span>
+  <br/>Phone: <span id="phone">08....</span></p>
+<button id="tombol">Tampilkan Nilai</button>
+ 
+<br/>
+<br/>
+ 
+<h2>Hasil: <br/> <span id="hasil"></span></h2>
+</body>
+ 
+<script>
+document.getElementById("tombol").
+addEventListener("click", tampilkan_data);
+ 
+function tampilkan_data() {
+    var name=document.getElementById("name").innerHTML;
+    var email=document.getElementById("email").innerHTML;
+    var address_s=document.getElementById("address_s").innerHTML;
+    var company_n=document.getElementById("company_n").innerHTML;
+    var phone=document.getElementById("phone").innerHTML;
+    document.getElementById("hasil").innerHTML=
+    name+"<br>"+email+"<br>"+address_s+"<br>"+company_n+"<br>"+phone;
+}
+</script>
+</html>
