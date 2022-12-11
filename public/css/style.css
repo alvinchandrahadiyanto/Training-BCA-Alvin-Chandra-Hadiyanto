@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'AirBnb Light';
+    src: url('../assets/font/AirbnbCerealLight.otf');
+}
+
+@font-face {
+    font-family: 'AirBnb Regular';
+    src: url('../assets/font/AirbnbCerealRegular.otf');
+}
+
+@font-face {
+    font-family: 'AirBnb Medium';
+    src: url('../assets/font/AirbnbCerealMedium.otf');
+}
+
+@font-face {
+    font-family: 'AirBnb Bold';
+    src: url('../assets/font/AirbnbCerealBold.otf');
+}
+
+@font-face {
+    font-family: 'AirBnb XtraBold';
+    src: url('../assets/font/AirbnbCerealXtraBold.otf');
+}
+
+@font-face {
+    font-family: 'AirBnb Black';
+    src: url('../assets/font/AirbnbCerealBlack.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'AirBnb Regular';
+    color: #424242;
+}
+
+.color-primary {
+    color: #424242 !important;
+}
+
+.color-secondary {
+    color: #D0CCCC !important;
+}
+
+.color-success {
+    color: #99D815 !important;
+}
+
+.color-light-grey {
+    color: #E5E5E5 !important;
+}
+
+.background-warning {
+    background-color: #F4CF5D !important;
+}
+
+.background-warning:hover {
+    background-color: #ebc040 !important;
+}
+
+.search .form-control::placeholder {
+    color: #E5E5E5 !important;
+    font-family: 'AirBnb Medium';
+}
+
+.font-light {
+    font-family: 'AirBnb Light';
+}
+
+.font-medium {
+    font-family: 'AirBnb Medium';
+}
+
+.font-bold {
+    font-family: 'AirBnb Bold';
+}
+
+.font-xtrabold {
+    font-family: 'AirBnb XtraBold';
+}
+
+.cover {
+    background-image: url('../assets/img/login-cover.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+.home-title {
+    font-size: 5rem;
+    padding-top: 5rem;
+}
+
+.title-cover {
+    color: #F9F9F9;
+    padding-left: 4rem;
+}
+
+.cover-footer {
+    font-size: 1rem !important;
+}
+
+.content {
+    padding: 0 5rem;
+}
+
+.btn-outline-secondary {
+    border-color: #D0CCCC !important;
+    color: #D0CCCC !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #D0CCCC !important;
+    color: #424242 !important;
+}
+
+.footer {
+    padding: 0 5rem 1rem 5rem;
+}
+
+input.focus-ring-0:focus {
+    box-shadow: none;
+}
+
+.shadow {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+ul.navbar-nav {
+    display: inline-block;
+    display: -webkit-inline-box;
+    gap: 1rem;
+}
+
+.dropdown-toggle {
+    font-size: .9rem !important;
+}
+
+.search {
+    width: 35%;
+}
+
+.search input {
+    padding-left: 4rem !important;
+}
+
+.icon-search {
+    position: absolute;
+    margin: 8px 0 0 2rem;
+    stroke: #D0CCCC;
+}
+
+.side-navigation {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: .5s;
+}
+
+.side-navigation a {
+    padding: 0px 8px 0px 32px;
+    text-decoration: none;
+    display: block;
+    transition: .3s;
+}
+
+.side-navigation a:hover {
+    color: #D0CCCC !important;
+}
+
+.wrapper-open {
+    margin-left: 250px;
+}
+
+.side-open {
+    left: 0;
+}
+
+#wrapper {
+    transition: margin-left .5s;
+}
+
+.account {
+    background-image: url('../assets/img/account.png');
+    width: 8rem;
+    height: 8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.account0 {
+    background-image: url('../assets/img/account0.png');
+    width: 8rem;
+    height: 8rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+button.logout:hover {
+    background-color: unset;
+    padding: .5rem .8rem;
+    transition: .3s;
+}
+
+.gallery {
+	margin-top: 2%;
+    background: #fff;
+}
+
+.gallery .flickity-viewport {
+    height: 250px !important;
+}
+
+.gallery .flickity-slider {
+    display: flex;
+    align-items: center;
+}
+
+.gallery-cell {
+	width: 40%;
+	height: 210px;
+	margin-inline: 20px;
+	border-radius: 15px;
+	-webkit-background-size: cover;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.gallery-cell.is-selected {
+    height: 250px;
+}
+
+.flickity-prev-next-button {
+    margin-inline: 1rem !important;
+}
+
+.content-label {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.bg-content-label {
+    background-color: #000;
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    opacity: .3;
+}
+
+.hero-image {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    height: 50vh;
+    background-image: url('../assets/img/hero-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 70px 80px -30px inset;
+}
+
+.hero-brand {
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -40%);
+}
+
+.hero-brand #imgBrand {
+    min-height: 15rem;
+    min-width: 11rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url('../assets/img/card/card-art.png');
+}
+
+.card-img-top {
+    height: 11rem !important;
+    background-image: url('../assets/img/card/card-art.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.list-all-books .card {
+    width: 15rem !important;
+}
+
+.list-all-books .card small {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .cover {
+        background-position-y: -5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .content {
+        padding: 0 1rem;
+    }
+
+    .footer {
+        padding: 0 1rem 1rem 1rem ;
+    }
+}

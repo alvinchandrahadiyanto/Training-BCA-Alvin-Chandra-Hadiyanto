@@ -1,0 +1,37 @@
+.cover {
+    background-image: url('../../assets/images/login-cover.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    max-height: 100vh;
+}
+
+.home-title {
+    font-size: 5rem;
+    padding-top: 5rem;
+}
+
+.h-cover {
+    height: 100vh;
+}
+
+.title-cover {
+    color: #F9F9F9;
+    padding-left: 4rem;
+}
+
+.cover-footer {
+    font-size: 1rem !important;
+}
+
+.content {
+    padding: 0 5rem;
+}
+
+input.focus-ring-0:focus {
+    box-shadow: none;
+}
+
+.footer {
+    padding: 0 5rem 1rem 5rem;
+}
